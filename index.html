@@ -8,10 +8,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
     <title>chat-app</title>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #ffffff;
+      }
 
-    <style>
         * {
             font-family: "poppins", sans-serif;
         }
@@ -43,14 +45,15 @@
                 width: 30px;
                 height:2px;
                 z-index:10;
-            background-color:#ffffff;
+                background-color:#ffffff;
+            }
         
             label{
                 display:flex;
                 flex-direction:column;
                 gap:4px;            }
         }
-        }
+        
     </style>
 </head>
 
@@ -59,13 +62,13 @@
         <div class="mx-auto w-full max-w-[1159px]">
             <div class="flex nav-flex justify-between items-center mb-[146px] max-sm:mb-[60px]">
                 <a href="">
-                    <h1 class="font-semibold text-[26px] leading-[116%] text-[#ffffff]">
-                        chat <span class="font-[275] text-[26px] leading-[116%] text-[#ffffff]"> app </span>
+                    <h1 class="font-semibold text-[26px] leading-[116%] text-clifford">
+                        chat <span class="font-[275] text-[26px] leading-[116%] text-clifford"> app </span>
                     </h1>
                 </a>
                 <input type="checkbox" id="manuicon" hidden>
                 <label class="flex flex-col gap-[4px]" for="manuicon">
-                    <span class="span-1 "></span>
+                    <span class="span-1"></span>
                     <span class="span-1 "></span>
                     <span class="span-1"></span>
                 </label>
@@ -73,39 +76,39 @@
                 <div class="flex gap-[30px] mobile-nav items-center">
                     <ul class="flex  link-flex gap-[30px]">
                         <a href="">
-                            <li class="font-medium text-[14px] leading-[100%] text-[right] text-[#ffffff]">Product</li>
+                            <li class="font-medium text-[14px] leading-[100%] text-[right] text-clifford">Product</li>
                         </a>
                         <a href="">
-                            <li class="font-medium text-[14px] leading-[100%] text-[right] text-[#ffffff]">Services</li>
+                            <li class="font-medium text-[14px] leading-[100%] text-[right] text-clifford">Services</li>
                         </a>
                         <a href="">
-                            <li class="font-medium text-[14px] leading-[100%] text-[right] text-[#ffffff]">Contact</li>
+                            <li class="font-medium text-[14px] leading-[100%] text-[right] text-clifford">Contact</li>
                         </a>
                         <a href="">
-                            <li class="font-medium text-[14px] leading-[100%] text-[right] text-[#ffffff]">Log In</li>
+                            <li class="font-medium text-[14px] leading-[100%] text-[right] text-clifford">Log In</li>
                         </a>
                     </ul>
                     <div>
                         <button
-                            class=" w-[111px] h-[40px] rounded-[210px] bg-[#FFFFFF33] font-medium text-[14px] leading-[100%] cursor-pointer text-[center] text-[#FFFFFF]">Try
+                            class=" w-[111px] h-[40px] rounded-[210px] bg-[#FFFFFF33] font-medium text-[14px] leading-[100%] cursor-pointer text-[center] text-clifford">Try
                             It Free</button>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-12 lg:flex-row lg:justify-between lg:items-center">
+            <div class="flex flex-col gap-12 lg:flex-row lg:justify-between">
                 <div class="flex lg:justify-center">
                     <div>
                         <h2
-                            class="font-semibold w-full max-w-[499px] mb-5 text-[48px] sm:text-[58px] lg:text-[75px] mt-5 leading-[115%] lg:leading-[128%] tracking-[-2%] text-[#FFFFFF]">
+                            class="font-semibold w-full max-w-[499px] mt-[50px] mb-5 text-[48px] sm:text-[58px] lg:text-[75px]  leading-[115%] lg:leading-[128%] tracking-[-2%] text-clifford">
                             Have your <br> best chat </h2>
-                        <p class="font-normal text-[18px] sm:text-[21px] leading-[100%] f-family text-[#FFFFFF]">Fast,
+                        <p class="font-normal text-[18px] sm:text-[21px] leading-[100%] f-family text-clifford">Fast,
                             easy & unlimited team chat. </p>
                         <div class="flex flex-col sm:flex-row gap-[16px] sm:gap-[36px] mt-[40px] lg:mt-[60px]">
                             <button
-                                class="w-full transition duration-150 all sm:w-[172px] rounded-[60px] f-family bg-[#FFFFFF] h-[50px] font-medium text-[16px] leading-[100%] text-center text-[#1E71FF] hover:text-[#FFFFFF] hover:bg-[#1E71FF] border-[2px] cursor-pointer border-[#FFFFFF]">
+                                class="w-full transition duration-150 all sm:w-[172px] rounded-[60px] f-family bg-clifford h-[50px] font-medium text-[16px] leading-[100%] text-center text-[#1E71FF] hover:text-clifford hover:bg-[#1E71FF] border-[2px] cursor-pointer border-clifford">
                                 Try it Free</button>
                             <button
-                                class="w-full transition duration-150 all sm:w-[172px] f-family rounded-[60px] bg-[#FFFFFF] h-[50px] font-medium text-[16px] leading-[100%] text-center text-[#1E71FF] hover:text-[#FFFFFF] hover:bg-[#1E71FF] border-[2px] cursor-pointer border-[#FFFFFF]">
+                                class="w-full transition duration-150 all sm:w-[172px] f-family rounded-[60px] h-[50px] font-medium text-[16px]  leading-[100%] text-center hover:text-[#1E71FF]  hover:bg-clifford text-clifford bg-[#1E71FF] border-[2px] cursor-pointer border-clifford">
                                 Get a Demo</button>
                         </div>
                     </div>
@@ -117,14 +120,14 @@
         </div>
 
     </section>
-    <section class=" lg:py-0 flex items-center justify-center">
+    <section class=" pt-[90px]  pb-[180px] px-5 flex items-center justify-center">
         <div class="mx-auto max-w-[1061px] w-full ">
-            <div class="items-center pt-[90px]  pb-[180px] flex flex-col">
+            <div class="items-center flex flex-col">
                 <h1
                     class="font-medium text-[32px] max-sm:text-[25px] lg:text-[45px] leading-[128%] text-center text-[#2B353E]">
                     Instant Team Chats </h1>
                 <p
-                    class="font-normal f-family max-w-[566px] w-full text-[16px] max-sm:text-[12px] mt-[20px] lg:mt-[30px] mb-[40px] lg:mb-[60px] leading-[162%] text-center text-[#2B353EB2]">
+                    class="font-normal f-family max-w-[519px]  text-[16px] max-sm:text-[12px] mt-[20px] lg:mt-[30px] mb-[40px] lg:mb-[60px] leading-[162%] text-center text-[#2B353EB2]">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                     massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
                     quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa.
@@ -133,13 +136,13 @@
             </div>
         </div>
     </section>
-    <section class="pt-[124px] pb-[137px] min-h-screen overflow-hidden px-5 lg:py-0 flex items-center justify-center relative bg-[#E8F1FF]">
+    <section class="overflow-hidden lg:pt-[158px] lg:pb-[188px] px-5 lg:py-0 flex items-center justify-center relative bg-[#E8F1FF]">
         <div class="w-full max-w-[1200px] px-4 flex flex-col lg:flex-row lg:items-center">
-            <div class="w-full lg:w-[55%] flex justify-center">
+            <div class="w-full   lg:w-[55%] flex justify-center">
                 <img src="./Group 16.png" alt="How to buy" width="816px" height="592px"
                     class=" lg:left-[-1%] lg:absolute lg:top-1/2 lg:-translate-y-1/2  max-xl:relative max-xl:right-auto  max-xl:top-auto max-xl:translate-y-0  max-xl:w-[700px]   max-md:w-[600px]  max-sm:w-[450px] max-[400px]:w-[380px] max-2xl:w-[800px] max-w-[750px]   ">
             </div>
-            
+
             <div class="w-full lg:w-[45%] mt-12 lg:mt-0 lg:ml-auto">
                 <h1
                     class="font-medium text-[32px] sm:text-[38px] lg:text-[45px] leading-[128%] text-[#2B353E] max-w-[467px]">
@@ -151,15 +154,15 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-[16px] sm:gap-[30px]">
                     <button
-                        class="h-[50px] f-family w-full sm:w-[167px] rounded-[60px] bg-[#1E71FF] font-medium text-[15px] leading-[100%] text-center text-[#FFFFFF] cursor-pointer hover:text-[#1E71FF] hover:bg-[#E8F1FF] hover:border-[2px]">
+                        class="h-[50px] f-family w-full sm:w-[167px] rounded-[60px] font-medium text-[15px] leading-[100%] cursor-pointer text-center text-clifford  bg-[#1E71FF]  hover:text-[#1E71FF] hover:bg-[#E8F1FF] hover:border-[2px]">
                         Try it Free </button>
                     <button
-                        class="h-[50px] f-family w-full sm:w-[167px] rounded-[60px] bg-[#1E71FF] font-medium text-[15px] leading-[100%] text-center text-[#FFFFFF] cursor-pointer hover:text-[#1E71FF] hover:bg-[#E8F1FF] hover:border-[2px]">
+                        class="h-[50px] f-family w-full sm:w-[167px] rounded-[60px] font-medium text-[15px] leading-[100%] cursor-pointer hover:text-clifford  hover:bg-[#1E71FF]  text-[#1E71FF] :bg-[#E8F1FF] border-[2px]">
                         Get a Demo </button>
                 </div>
                 <div class="w-[167px] mt-[60px] lg:mt-[90px] mb-[42.21px] h-[0px] border-[1px] border-[#2B353E26]">
                 </div>
-                <div class="flex flex-col sm:flex-row gap-[20px] sm:gap-[25.51px] items-start sm:items-center">
+                <div class="flex flex-col sm:flex-row gap-[20px] sm:gap-[25.51px] items-start">
                     <svg width="132" height="20" viewBox="0 0 132 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M10.9101 0.597228L13.1545 5.14351C13.3105 5.45971 13.6123 5.67881 13.9614 5.72943L18.9801 6.45851C19.8593 6.58632 20.21 7.66604 19.5741 8.28557L15.9426 11.8243C15.6902 12.0704 15.5748 12.4252 15.6346 12.7725L16.4917 17.7694C16.642 18.6446 15.723 19.3118 14.9368 18.899L10.4482 16.5399C10.136 16.376 9.76285 16.376 9.45071 16.5399L4.96203 18.899C4.17587 19.3123 3.25688 18.6446 3.40714 17.7694L4.26428 12.7725C4.32406 12.4252 4.20866 12.0704 3.95629 11.8243L0.324755 8.28557C-0.311148 7.66563 0.0395948 6.5859 0.918735 6.45851L5.93747 5.72943C6.28656 5.67881 6.58832 5.45971 6.74439 5.14351L8.98873 0.597228C9.3814 -0.199076 10.5171 -0.199076 10.9101 0.597228Z"
@@ -190,124 +193,104 @@
             </div>
         </div>
     </section>
-    <section class=" flex px-5 items-center justify-center ">
-        <div class="mx-auto max-w-[1162px] w-full">
-            <div class=" flex pt-[90px] pb-[30px] flex-col justify-between sm:flex-row  gap-12 lg:gap-8">
-                <div>
+    <section class="flex pt-[90px] pb-[30px] px-5 justify-center items-center">
+        <div class="mx-auto max-w-[1162px] w-full px-4 sm:px-6 lg:px-0">
+            <div class="flex flex-col gap-10 sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:gap-3 lg:justify-between">
+                <div class="max-w-[168px]">
                     <a href="">
-                        <h1 class="font-semibold text-[26px] leading-[116%] text-[#1E71FF]">
-                            chat
-                            <span class="font-[275] text-[26px] leading-[116%] text-[#1E71FF]">
-                                app
-                            </span>
-                        </h1>
+                        <h2
+                            class="font-semibold text-[26px] leading-[115.99999999999999%] tracking-[-2%] text-[#1E71FF]">
+                            chat <span
+                                class="font-extralight text-[26px] leading-[115.99999999999999%] tracking-[-2%] text-[#1E71FF]">app</span>
+                        </h2>
                     </a>
-                    <p class="font-normal text-[15px] leading-[162%] f-family mt-[18px] max-w-[168px] text-[#2B353EB2]">
-                        The last team chat you will ever need.
-                    </p>
-                    <div class="mt-[235px] max-sm:mt-[44px]" >
-                        <p class="font-normal text-[13px] leading-[162%] text-[#2B353EB2]">© Copyright ChatApp Inc.</p>
-                    </div>
+                    <p class="f-family font-normal text-[15px] leading-[162%] mt-[18px] text-[#2B353EB2]">The last team
+                        chat you will ever need.</p>
                 </div>
+
                 <div>
-                    <p class="font-normal text-[18px] leading-[162%] mb-[20px] text-[#2B353E]">
-                        Help
-                    </p>
+                    <p class="font-normal text-[18px] leading-[162%] text-[#2B353E]">Help</p>
                     <ul>
                         <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2]">
-                                Support
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[20px]">Support</li>
+                        </a>
+                        <a href="">
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[12px]">Knowledgebase
                             </li>
                         </a>
                         <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] mt-[12px] mb-[12px] text-[#2B353EB2]">
-                                Knowledgebase
-                            </li>
-                        </a>
-                        <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2]">
-                                Tutorials
-                            </li>
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[12px]">Tutorials</li>
                         </a>
                     </ul>
                 </div>
+
                 <div>
-                    <p class="font-normal text-[18px] leading-[162%] mb-[20px] text-[#2B353E]">
-                        Features
-                    </p>
+                    <p class="font-normal text-[18px] leading-[162%] text-[#2B353E]">Features</p>
                     <ul>
                         <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2]">
-                                Screen Sharing
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[20px]">Screen Sharing
                             </li>
                         </a>
                         <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] mt-[12px] mb-[12px] text-[#2B353EB2]">
-                                iOS & Android Apps
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[12px]">iOS & Android
+                                Apps</li>
+                        </a>
+                        <a href="">
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[12px]">File Sharing
                             </li>
                         </a>
                         <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2]">
-                                File Sharing
-                            </li>
-                        </a>
-                        <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] mt-[12px] text-[#2B353EB2]">
-                                User Management
-                            </li>
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[12px]">User
+                                Management</li>
                         </a>
                     </ul>
                 </div>
+
                 <div>
-                    <p class="font-normal text-[18px] leading-[162%] mb-[20px] text-[#2B353E]">
-                        Company
-                    </p>
+                    <p class="font-normal text-[18px] leading-[162%] text-[#2B353E]">Company</p>
                     <ul>
                         <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2]">
-                                About Us
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[20px]">About Us</li>
+                        </a>
+                        <a href="">
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[12px]">Careers
                             </li>
                         </a>
                         <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] mt-[12px] mb-[12px] text-[#2B353EB2]">
-                                Careers
-                            </li>
-                        </a>
-                        <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2]">
-                                Contact Us
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-normal text-[18px] leading-[162%] mb-[20px] text-[#2B353E]">
-                        Contact Us
-                    </p>
-                    <ul>
-                        <a href="mailto:info@chatapp.com">
-                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2]">
-                                info@chatapp.com
-                            </li>
-                        </a>
-                        <a href="tel:1-800-200-300">
-                            <li class="font-normal text-[13px] leading-[162%] mt-[12px] mb-[12px] text-[#2B353EB2]">
-                                1-800-200-300
-                            </li>
-                        </a>
-                        <a href="">
-                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2]">
-                                File Sharing
-                            </li>
-                        </a>
-                        <a href="">
-                            <li class="font-normal text-[13px] max-w-[168px] leading-[162%] mt-[12px] text-[#2B353EB2]">
-                                3500 Deer Creek Rd Palo Alto, CA
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[12px]">Contact Us
                             </li>
                         </a>
                     </ul>
                 </div>
 
+                <div>
+                    <p class="font-normal text-[18px] leading-[162%] text-[#2B353E]">Contact Us</p>
+                    <ul>
+                        <a href="mailto:info@chatapp.com">
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[20px]">
+                                info@chatapp.com</li>
+                        </a>
+                        <a href="tel:1-800-200-300">
+                            <li class="font-normal text-[13px] leading-[162%] text-[#2B353EB2] mt-[12px]">1-800-200-300
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="font-normal max-w-[168px] text-[13px] leading-[162%] text-[#2B353EB2] mt-[12px]">
+                                3500 Deer
+                                Creek Rd
+                                Palo Alto, CA</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <a href="">
+                    <p
+                        class="font-normal mt-[80px] sm:mt-[120px] lg:mt-[180px] text-[13px] leading-[162%] text-[#2B353EB2]">
+                        © Copyright ChatApp
+                        Inc.</p>
+                </a>
             </div>
         </div>
     </section>
